@@ -91,7 +91,7 @@ class ApartamentoregisControlador extends BaseController
 		$request = \Config\Services::request();
 		$id = $request->getGet('id');
 		$apartamento = $ApartModelo->getApart($id);
-		var_dump($apartamento);
+		
 		echo view('layouts/header');
 		echo view('update_apartview', array("apartamento" => $apartamento[0]));
 		echo view('layouts/footer');

@@ -1,6 +1,6 @@
 
 
-<form method="POST" action="<?php echo base_url() ?>/update-edit-apart?id=<?php echo $apartamento->id ?>">
+<form method="POST" action="<?php echo base_url() ?>/update-edit-apart?id=<?php echo $apartamento->id ?>" enctype="multipart/form-data">
     <div class="container-fluid">
         <div class="row">
             <div class="mb-3 col-5">
@@ -35,7 +35,7 @@
         <div class="row">
             <div class="mb-3 col-5">
                 <label for="imagen" class="form-label">Imagen destacada</label>
-                <input type="text" value="<?php echo $apartamento->imagen_destacada; ?>" name="imagen_destacada" class="form-control" id="imagen" aria-describedby="emailHelp">
+                <input type="file" value="<?php echo $apartamento->imagen_destacada; ?>" name="imagen_destacada" class="form-control" id="imagen" aria-describedby="emailHelp">
             </div>
             <div class="mb-3 col-5">
                 <label for="valor" class="form-label">Valor por noche</label>
